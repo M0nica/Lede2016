@@ -1,0 +1,8 @@
+   5 Pizza
+   4 Tacos
+   3 Waffles
+   2 Popsicles
+   2 Garlic
+   1 Rocks
+   1 Pineapple
+   1 Donuts
