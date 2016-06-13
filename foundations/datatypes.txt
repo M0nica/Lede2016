@@ -1,0 +1,24 @@
+.xls - excel
+.txt - plain text file
+.csv - comma seperated values
+
+delimited
+not-delimited - fixed with
+
+smushface|6|brownish
+callery|2|calico
+napolean|3|white
+
+fixed-width
+SMUSHFACE 06 BROWNISH
+CALLERY 02 CALICO
+NAPOLEAN 03 WHITE
+
+can use csv.Reader and csv.DictReader to read csv's
+
+However, there is a better way to view csv
+
+Can use Pandas to read CSV files
+
+
+creating new environment - dataanalysis
