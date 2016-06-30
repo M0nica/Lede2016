@@ -10,11 +10,13 @@
 <body>
     <h1>Country Information</h1>
     <p>This page uses data from MONDIAL to inform you about a country.</p>
+    <!-- this part of the code will only run if the country is specified in URL-->
     {% if country %}
         <p>You asked for information on {{ country['name'] }}. This country
         has {{ country['population'] }} people and its capital is
         {{ country['capital'] }}.</p>
     {% endif %}
+    <!-- will execute regardless of if a country is specified --> 
     <p>Enter the name of the country you want to lookup</a>
   <form action="/countries" method="GET">
     Enter the name of a country here: <input type="text" name="lookup_name">

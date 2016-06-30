@@ -3,7 +3,8 @@
 #   Returns the population of country
 #   France, Paris, 64933400
 
-from flask import Flask, request, render_template
+# importing jsonify to transform python dictionaries into json
+from flask import Flask, request, render_template, jsonify
 import pg8000
 
 app = Flask(__name__)
@@ -27,11 +28,12 @@ def country_info():
             cinfo = {
             'name' : response[0],
             'capital' : response[1],
-            'population' : response[2]
+            # converted to integer, because decimals cannot be converted into json
+            'population' : int(response[2])
             }
     #perform a database search
     # format the rresults as text (html)
     # return that text
-    return render_template("country_lookup.html", country=cinfo)
+    return jsonify(cinfo)
 
 app.run()
