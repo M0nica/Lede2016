@@ -14,6 +14,7 @@ conn = pg8000.connect(database="mondial", user="Monica")
 @app.route("/countries")
 def get_countries():
     cursor = conn.cursor()
+    # can set a population_gt to say how large the population may be .  
     pop_gt = int(request.args.get('population_gt', 0))
     cursor.execute(
         """SELECT name, capital, area, population
