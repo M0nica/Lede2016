@@ -1,4 +1,4 @@
-# Data and Databases
+# Data and Databases Notes and Exercises
 - /flask_stuff
   - creating a Flask application with multiple routes, parameters and templates
   - connecting Flask application to database
