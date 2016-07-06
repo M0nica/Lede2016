@@ -1,0 +1,17 @@
+# Data and Databases
+- /flask_stuff
+  - creating a Flask application with multiple routes, parameters and templates
+  - connecting Flask application to database
+- /HTML_notes
+  - Notes for the first four classes of Data and Databases
+- /Misc.
+  - Test connection to psql and other misc. notes
+- /Regular_Expression_Notes
+  - Using regular expressions to parse text
+  - Using re.findall() and re.search()
+- /Twitter_API_Notes
+  - Authenticating Twitter application
+  - Using Twython to search Twitter
+- /Web_Scraping_Notes
+  - Scraping Morningside Heights Menupages, Columbia Journalism Faculty page and Morningside
+  - Creating database from information that was scraped
