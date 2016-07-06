@@ -1,0 +1,23 @@
+# Foundations
+
+- /07-pandas
+  - Introduction to pandas
+- /08-Pandas_Matplotlib
+  - Handling and visualizing data in pandas with matplotlib.
+- /09-Functions
+  - Functions in Python
+- /11-data
+  - Cleaning data and convering pdf into a csv for pandas
+- /12-debugging
+  - Various debugging strategies
+- /545-data_and_datastructures
+  - Review of data structures in python
+- /APIs
+  - Earthquake API
+  - Spotify API
+- /Scraping_NYT
+  - Scraping New York Times homepage
+- /warmup_exercises
+  - Various warmup exercises
+- /week1
+  - Introduction to Python and Command Line
