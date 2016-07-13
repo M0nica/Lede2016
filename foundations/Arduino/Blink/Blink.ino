@@ -24,8 +24,8 @@ void setup() {
   pinMode(10, OUTPUT);
 }
 
-// the loop function runs over and over again forever 
-// until you unplug Arduino this will continue running 
+// the loop function runs over and over again forever
+// until you unplug Arduino this will continue running
 
 //alternate the lights for 10 and 12
 void loop() {
@@ -33,7 +33,7 @@ void loop() {
   delay(100);              // wait for a 1/2 second
   digitalWrite(10, LOW);    // turn the LED off by making the voltage LOW
   delay(500);              // wait for a 1/2 second between 10 and 12
-  
+
   digitalWrite(12, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(100);              // wait for a 1/2 second
   digitalWrite(12, LOW);    // turn the LED off by making the voltage LOW
@@ -48,5 +48,5 @@ void loop() {
 //  digitalWrite(10, LOW);
 //  digitalWrite(12, LOW); // turn the LED off by making the voltage LOW
 //  delay(500);              // wait for a 1/2 second between 10 and 12
-// 
+//
 //}
