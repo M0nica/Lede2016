@@ -12,20 +12,41 @@
   modified 8 May 2014
   by Scott Fitzgerald
  */
-
+// Physical setup of Arduino
+// pin 12 => resistor => LED => GDN
+// pin 10 => resistor => a DIFFERENT LED => GND
 
 // the setup function runs once when you press reset or power the board
 // setup only runs once in Arduino
 void setup() {
   // initialize digital pin 12 as an output.
   pinMode(12, OUTPUT);
+  pinMode(10, OUTPUT);
 }
 
 // the loop function runs over and over again forever 
-// until you unplug Arduino this will continue running nn
+// until you unplug Arduino this will continue running 
+
+//alternate the lights for 10 and 12
 void loop() {
+  digitalWrite(10, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(100);              // wait for a 1/2 second
+  digitalWrite(10, LOW);    // turn the LED off by making the voltage LOW
+  delay(500);              // wait for a 1/2 second between 10 and 12
+  
   digitalWrite(12, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(100);              // wait for a 1/2 second
   digitalWrite(12, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);              // wait for a 1/2 second
+  delay(500);              // wait for a 1/2 second
 }
+
+//turn 10 and 12 on/off at the same time
+//void loop() {
+//  digitalWrite(10, HIGH);
+//  digitalWrite(12, HIGH); // turn the LED on (HIGH is the voltage level)
+//  delay(100);              // wait for a 1/2 second
+//  digitalWrite(10, LOW);
+//  digitalWrite(12, LOW); // turn the LED off by making the voltage LOW
+//  delay(500);              // wait for a 1/2 second between 10 and 12
+// 
+//}
